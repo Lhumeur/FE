@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: floralwhite;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    padding: 5px;
+}
+
+img {
+    width: 128px;
+    height: 128px;
+}
+
+p {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    margin: 50px auto;
+    border: none;
+    background-color: darkgrey;
+    box-shadow: 0 0 10px darkgrey;
+}
+
+.tabs, .tabs__btns {
+    display: inline-flex;
+}
+
+.tab {
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #cccccc;
+    color: white;
+    font-weight: normal;
+    border: none;
+}
+
+.js_tab_active {
+    background-color: ghostwhite;
+    color: black;
+    font-weight: bold;
+}
+
+.tabs__btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav__btns {
+    margin-right: 5px;
+}
+
+.tabs__data {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 40px);
+    padding: 20px;
+    background-color: ghostwhite;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.js_deactivated {
+    display: none;
+}
+
+.js_requestFault {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    text-align: center;
+}

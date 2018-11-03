@@ -1,0 +1,23 @@
+AJAX, JSON:
+- о возможностях AJAX и COMET (https://learn.javascript.ru/ajax-intro)
+- DevTools, вкладка Network
+- основы XMLHttpRequest (https://learn.javascript.ru/ajax-xmlhttprequest)
+- примеры успешного и неудачного запросов (см. скрины)
+- разница между GET и POST запросами, запросы PUT и DELETE
+- виды кодировок (urlencoded, FormData, JSON - https://learn.javascript.ru/xhr-forms + см. скрины)
+- формат данных JSON (см. скрины)
+- какой запрос считается кросс-доменным (https://learn.javascript.ru/same-origin-policy),
+  способы обойти кросс-доменные ограничения (см. скрин или плагин CORS)
+
+WebStorage и Cookies:
+- localStorage, sessionStorage, cookies (см. скрины)
+- DevTools, вкладка Application
+
+Тайминг в JS:
+- setTimeout, setInterval (https://learn.javascript.ru/settimeout-setinterval - до главы "Минимальная задержка таймера")
+- порядок обработки событий (https://learn.javascript.ru/events-and-timing-depth)
+
+Доп. инфо *:
+- пути к файлам (http://www.uamedwed.com/blog/web/absolyutnyj-i-otnositelnyj-put-k-fajlam.html)
+- список кодов состояния (https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_
+%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP)

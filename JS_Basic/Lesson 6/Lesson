@@ -1,0 +1,30 @@
+Window, DOM, BOM:
+- общая информация (https://learn.javascript.ru/browser-environment)
+- глобальный объект window (см. скрины)
+
+Работа с деревом DOM:
+- дерево DOM (https://learn.javascript.ru/dom-nodes)
+- поиск элементов в DOM (см. скрин), getElementById работает только для document
+- навигация по DOM-элементам (см. скрины), children - для получения дочерних элементов, отличие от childNodes
+- манипулирование элементами DOM (см. скрин) + http://theory.phphtml.net/javascript/dom/insertAdjacentHTML.html
+- работа с содержимым элемента (см. скрин), innerText, value, вставка переменной инлайн
+- работа с атрибутами и классами (см. скрины), data-атрибуты
+- установка стилевых свойств элементов и получение всех стилей (см. скрины)
+
+События:
+- виды событий (см. скрины)
+- установка обработчиков и перехватчиков событий (см. скрины)
+- разница между addEventListener и on:
+  - для addEventListener можно задать режим (обработчик либо перехватчик)
+  - с помощью addEventListener можно задавать сколько угодно обработчиков событий
+    для одного элемента, тогда как если повесить два обработчика с помощью on - последний перезапишет предыдущий
+- всплытие и перехват события, объект event, свойства target и currentTarget, остановка всплытия
+  (https://learn.javascript.ru/event-bubbling)
+- event.preventDefault() - отменяет обработку события, заданную браузером по-умолчанию
+- делегирование событий, сохранение контекста this через переменную (https://learn.javascript.ru/event-delegation)
+
+Доп. инфо *:
+- полезная статья про методы escape(), encode-/decodeURI(), encode-/decodeURIComponent() -
+  http://xhtml.ru/2006/05/25/encodestring/
+- коллекции не являются массивами (https://learn.javascript.ru/traversing-dom)
+- cloneNode (https://learn.javascript.ru/modifying-document)

@@ -1,0 +1,22 @@
+Условный оператор if/else:
+- что такое if/else, множественный else if
+- тернарный оператор
+- что воспринимается true/false в условиях (см. скрины)
+- https://learn.javascript.ru/ifelse *
+
+Конструкция switch:
+- https://learn.javascript.ru/switch
+
+Массивы:
+- https://learn.javascript.ru/array
+
+Циклы:
+- что такое циклы и итерация
+- циклы while и do-while (см. скрины)
+- цикл for - видимость переменной, пропуск частей цикла,
+  break/continue, метки (https://learn.javascript.ru/while-for)
+- методы перебора массива(https://learn.javascript.ru/array-iteration)
+
+Дебаггинг:
+- console.log, debugger
+- DevTools, вкладка Sources.

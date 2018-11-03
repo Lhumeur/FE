@@ -1,0 +1,126 @@
+Задание цвета с прозрачностью:
+- rgba(0,0,0,.6);
+
+Opacity:
+- http://www.wisdomweb.ru/CSS3/transp.php
+
+Fonts:
+- подключение (http://www.wisdomweb.ru/CSS3/font.php)
+- самый поддерживаемый формат - woff (ttf/otf, eot - для IE)
+- полезный сервис (https://caniuse.com/)
+
+Манипуляции с текстом:
+- http://www.wisdomweb.ru/CSS3/text.php
+
+Border-radius и box-shadow:
+- http://www.wisdomweb.ru/CSS3/border.php
+
+Схлопывание margin:
+- http://xiper.net/learn/css/box-model/margin-collapsing
+
+Background:
+- image
+- position
+- repeat
+- attachment (fixed, scroll - https://www.w3schools.com/cssref/tryit.asp?filename=trycss_background-attachment)
+- size (cover, contain - https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-size)
+- origin (https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background-origin)
+- все значения в одном свойстве (url, repeat, position, color)
+- синтаксис нескольких фоновых изображений
+- спрайты (см. скрин)
+
+Overflow:
+- visible, hidden, scroll, auto
+
+Растровая и векторная графика, расширения изображений:
+(см. скрины)
+
+Единицы измерения CSS:
+- https://learn.javascript.ru/css-units
+
+Адаптивность:
+- отличие Adaptive верстки от Responsive (https://blog.sibirix.ru/2015/04/21/adaptive-responsive/)
+- responsive (https://habrahabr.ru/post/243247/)
+- медиа-запросы (см. скрин)
+
+CSS селекторы:
+- *, div *
+- div:not(#block)
+- разница между nth-child и nth-of-type https://habrahabr.ru/post/119139/
+- остальные полезные селекторы (см. скрины)
+- отличие псевдоклассов от псевдоэлементов (см. скрины)
+- проблема с id (см. скрин)
+- вес селектора:
+  tag = 1;
+  class = 10;
+  id = 100;
+  style = 1000;
+  !important = 10000;
+
+LESS, SASS, SCSS:
+(см. скрины)
+
+Поток:
+- это порядок вывода объектов на странице (сверху вниз, так, как элементы описаны в коде - так сделано
+для предсказуемости результата вывода элементов)
+- position:
+  - static, fixed, relative, absolute
+  - позиционирование от родителя
+- float:
+  - "плавающий" элемент вырван из общего потока и примыкает к одной из сторон родителя по горизонтали (!).
+  Элемент назван так, подобно камню, который обтекает поток воды. Точно так же текст обтекает float-элемент.
+  - примеры использования - небольшие галереи, двух и трёхколоночные макеты, иллюстрации в тексте и т.д.
+  - если у нас есть два плавающих элемента, то второй элемент обтекает первый.
+  - свойство clear (см. скрин)
+  - площадь контейнера (см. скрин)
+  - красивое отображение текста независимо от его высоты (см. скрин)
+
+Flexbox:
+- http://html5.by/blog/flexbox/
+
+Grid:
+- отличие от flex - flexbox работает только в одном измерении. Из этого следует, что мы можем размещать flex элементы
+  только вдоль главной оси или вдоль поперечной оси. Мы не можем разместить flex элементы сразу на нескольких осях.
+  CSS Grid в свою очередь нам позволяет работать с разметкой в двухмерном пространстве и выравнивать
+  содержимое в обоих измерениях.
+- раздел CSS Grid (https://www.w3schools.com/css/css_grid.asp - 3 статьи) *
+
+Transform:
+- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform
+- transform: translate(10px, 10px);
+
+Transition:
+- https://www.w3schools.com/css/css3_transitions.asp
+- transition: all .2s ease-out;
+
+Animations:
+- CSS3 анимации  не  останавливают  поток  выполнения (многопоточность в отличие от JS).
+- https://www.w3schools.com/css/css3_animations.asp
+
+Формы:
+- раздел HTML Forms (https://www.w3schools.com/html/html_forms.asp - 4 статьи) *
+- отличие методов get от post
+
+Filter:
+- http://fe.it-academy.by/ViewSlides.php?slide=945&lect=4
+
+Clip-path:
+- http://fe.it-academy.by/ViewSlides.php?slide=1995&lect=4
+
+Bootstrap:
+- http://getbootstrap.com/
+
+BEM:
+- https://ru.bem.info/methodology/quick-start/
+
+DevTools, вкладка Elements.
+
+Webstorm.
+
+Правила хорошего тона:
+- подгружать иконки нужно спрайтом либо в формате svg.
+- любой интерактивный элемент при hover должен менять cursor на pointer и видоизменяться.
+- верстать нужно в соответствии с семантикой и используя компонентный подход.
+- необходимо использовать понятные и адекватные названия файлов, директорий, селекторов.
+- использовать разные классы для CSS и JS, не переопределять глобальные классы.
+- использовать правильное форматирование, правильные одинаковые кавычки, оставлять комментарии, где это необходимо.

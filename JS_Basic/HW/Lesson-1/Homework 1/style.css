@@ -1,0 +1,60 @@
+* {box-sizing: border-box;}
+
+/* Parallax example */
+.parallax {
+  margin: 0;
+  height: 200vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.parallax__img-1 {background-image: url("images/background.jpg");}
+
+/* Slider example */
+.wrapper {
+  width: 640px;
+  height: 320px;
+  top: calc(25% - 160px);
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .6);
+}
+.slider{
+  width: 500%;
+  height: inherit;
+  position: relative;
+}
+.slides {
+  width: 20%;
+  height: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  float: left;
+  animation-name: glide;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 25s;
+}
+.slide__img-1 {background-image: url("images/img_1.jpg");}
+.slide__img-2 {background-image: url("images/img_2.jpg");}
+.slide__img-3 {background-image: url("images/img_3.jpg");}
+.slide__img-4 {background-image: url("images/img_4.jpg");}
+.slide__img-5 {background-image: url("images/img_5.jpg");}
+
+@keyframes glide {
+  0% {left: 0%;}
+  15% {left: 0%;}
+  20% {left: -20%;}
+  35% {left: -20%;}
+  40% {left: -40%;}
+  55% {left: -40%;}
+  60% {left: -60%;}
+  75% {left: -60%;}
+  80% {left: -80%;}
+  95% {left: -80%;}
+  100% {left: 0%;}
+}
