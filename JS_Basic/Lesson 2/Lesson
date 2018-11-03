@@ -1,0 +1,59 @@
+О Javascript:
+- https://learn.javascript.ru/intro
+- браузерный язык, перспективы
+- ECMAScript6
+- NodeJS
+
+Подключение JS:
+- подключать js-код лучше всего перед закрывающим тегом body в целях оптимизации
+- код в html:
+  <script>
+  	//js code here
+  </script>
+- подключение кода во внешнем файле:
+  <script src="{{path}}"></script>
+- атрибуты async и defer:
+  по-умолчанию:
+    - скрипты загружаются по порядку
+    - выполняются сразу после того, как загрузились
+    - загрузка документа останавливается
+  с async:
+    - скрипты грузятся в произвольном порядке
+    - выполняются сразу после того, как загрузились
+    - загрузка документа НЕ останавливается
+  с defer:
+    - сохраняется взаимный порядок загрузки скриптов
+      (как и в первом варианте)
+    - выполняются ПОСЛЕ загрузки всего документа
+    - загрузка документа НЕ останавливается
+- наглядная статья - https://habr.com/post/323790/
+
+Комментарии в JS:
+- https://learn.javascript.ru/structure#%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B8
+
+Переменные:
+- переменные (https://learn.javascript.ru/variables)
+- имена переменных (https://learn.javascript.ru/variable-names)
+- типы данных, typeof (https://learn.javascript.ru/types-intro)
+- typeof NaN "number"
+- отличие null от undefined (см. скрин)
+
+Операторы:
+- арифметические операции (см. скрины)
+- операции сравнения и логические операции (см. скрины) - "или" спотыкается на правде / "и" спотыкается на лжи,
+  приоритет выше у &&
+- преобразование типов (см. скрин), + работает как Number(), метод toString()
+- хитрости в приведении типов (см. скрины *)
+- подводные камни Javascript (https://habrahabr.ru/post/159313/) *
+- доп. инфо *:
+  https://learn.javascript.ru/operators
+  https://learn.javascript.ru/comparison
+  https://learn.javascript.ru/logical-ops
+
+Вывод данных:
+- https://learn.javascript.ru/uibasic
+- console.log()
+
+DevTools, вкладка Console.
+
+Git.
