@@ -1,0 +1,40 @@
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300vh;
+}
+.relative, .absolute, .fixed {
+  background-color: aliceblue;
+  border: 1px solid grey;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.relative {
+/*
+  position: relative;
+  left: 50px;
+  top: 50px;
+*/
+  order: 20;
+  z-index: 1;
+}
+.absolute {
+  order: 22;
+  z-index: 2;
+/*
+  position: absolute;
+  top: 0;
+  left: 0;
+*/
+}
+
+.fixed {
+  order: 21;
+  z-index: 3;
+  position: fixed;
+/*  left: 0;*/
+  top: 0;
+}

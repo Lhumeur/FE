@@ -1,0 +1,87 @@
+
+@import 
+  url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+/*
+@font-face {
+  font-family:;
+  src:url();
+}
+*/
+p {
+/*  Выравнивание */
+  text-align: justify;
+/* Отступ первой строки */
+  text-indent: 5%;
+/* Высота строки */
+  line-height: 1.2em;
+/* Расстояние между словами */
+  word-spacing: 1em;
+/*  Направление написания текста */
+  direction: rtl;
+/*  Направление написания слов */
+  unicode-bidi: bidi-override;
+  font-size: 2em;
+    
+/* Краткая форма */
+  font: font-style font-variant font-weight font-size/line-height font-family;
+}
+
+/*  Форматирование первой буквы первой строки абзаца */
+/*
+p::first-letter {
+  font-size: 2em;
+  margin-right: 2px;
+  color: #e96;
+  font-weight: bold;
+  text-shadow: -2px -2px 2px white, 2px 2px 2px #9e9d99;
+}
+*/
+
+p::first-letter {
+  font-size: 1.2em;
+  padding: 3px 10px;
+  margin-right: 5px;
+  background: #e96;
+  color: #faf4f4;
+  font-weight: bold;
+  border-radius: 50%;
+}
+/* Конец примеров форматирования первой буквы абзаца */
+
+span {
+/* Вертикальное выравнивание*/
+  vertical-align: 20%;
+/* Расстояние между буквами */
+  letter-spacing: .5em;
+/*  Трансформация текста */
+  text-transform: uppercase;
+/*  Декорация текста */
+  text-decoration: line-through;
+/*  Семейство шрифтов */
+  font-family: 'Hanalei Fill', cursive;
+/*  Стиль начертания шрифта */
+  font-style: italic;
+/*  Вариант начертания шрифта (строчные отображаются прописными)*/
+  font-variant: small-caps;
+/*  Насыщенность шрифта */
+  font-weight: 900;
+/* Размер шрифта */
+  font-size: larger; /* smoller, xx-small, xx-large */
+  color: red;
+}
+
+strong {
+/*  Обработка пробелов */
+  white-space: pre-line;
+}
+
+textarea {
+  white-space: pre-line;
+/* Настройка табуляции, работает только у 2-х элемонтов в html, работает только внутри <pre> и <textarea> */
+  tab-size: 20px;
+}
+
+blockquote {
+  font-size: 2em;
+  quotes: '\00ab' '\00bb' '\2039' '\203A';
+}

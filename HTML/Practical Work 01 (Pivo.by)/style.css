@@ -1,0 +1,347 @@
+*, ::after, ::before {box-sizing: border-box;}
+:root{font-size: 16px}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  text-align: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+img {vertical-align: middle;border-style: none;}
+a {text-decoration: none;color: #212529;}
+label{visibility: hidden;position: absolute;}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: inherit;
+}
+h3 {font-size: 1.75rem;}
+p{margin-top: 0;margin-bottom: 1rem;}
+
+
+.container{
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+      .container.q{
+        background-color: #000;
+        height: 1000px;
+      }
+/*
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+*/
+/* Main Header*/
+.main-header{
+  width: 100%;
+  background-color: #ffe63a;
+  align-items: center;
+  padding: 8px 16px;
+}
+.main-header__logo{
+  display: block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+}
+.main-header__logo img{
+  height: 31px;width: 165px;
+  margin-right: 0;
+}
+.main-header__logo img:hover{
+  opacity: .5;
+}
+.main-header__nav-collapse{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-links{
+  display: flex;  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link{
+  margin-right: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.nav-links>.nav-link>a{
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+}
+.nav-link>a:hover{
+  opacity: .5;
+  text-decoration: none;
+}
+.nav-link__catalog{
+  position: relative;
+}
+.nav-link__catalog:hover>*{
+/*  display: block;*/
+  visibility: visible;
+}
+/* Я тебя не забуду...
+2 часа убитого времени, чтобы понять ПОЧЕМУ fontawesome НЕ РАБОТАЕТ! */
+.dropdown-toggle::after{
+  content: "";
+  display: inline-flex;
+  border-top: .3em solid;
+  border-bottom: 0;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+  width: 0;
+  height: 0;
+  vertical-align: .255em;
+  margin-left: .255em;
+}
+.catalog__nav-links{
+  display: block;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 32px;
+  left: -8px;
+  width: 12rem;
+  height: 8rem;
+  padding: .5rem 0.5rem;
+  margin: .125rem 0 0;
+  color: #212529;
+  text-align: left;
+  background-color: #ffe63a;
+  border-radius: .25rem;
+}
+
+/* Main Form Search */
+.nav-collapse__form{
+  margin-right: 10px;
+  position: relative;
+}
+.form__search{
+  border: 1px solid rgba(33,37,41,.1);
+  border-radius: 2px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  background-color: transparent;
+  padding-right: 30px;
+  height: 35px;
+  line-height: 1.5;
+  width: 100%;
+}  
+.form__search:focus{
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #fff;
+  padding-right: 30px;
+  height: 35px;
+  line-height: 1.5;
+  width: 100%;
+}  
+.form__btn-search {
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: 0 0;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(Img/search-solid.svg);
+  background-repeat: no-repeat;
+  opacity: .5;
+}
+/* Secondary navigation */
+.secondary-nav{
+  display: none;
+  width: 100%;
+  background-color: #fff876;
+  font-size: .75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.secondary-nav__nav-links{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 0 -.5rem;
+  padding: 0;
+}
+/* Main content */
+.content-area{margin-top: 1rem;}
+.main-posts{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.post_big{
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.post_normal{
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.post-thumbnail img{
+  border: 1px solid #dee2e6;
+}
+.post-link{
+  color: #212529;
+  display: block;
+}
+.post-image{
+  max-width: 100%;
+  height: auto;
+}
+.post-category{
+  position: relative;
+  display: inline-block;
+  top: -20px;
+  left: 15px;
+  background-color: #ffe63a;
+  color: #212529;
+  font-weight: 700;
+  font-size: .8rem;
+  padding: 5px 10px;
+}
+.post-header{
+  margin: -.5rem 0 0;
+}
+.post-title{
+  font-size: 1.5rem;
+}
+.post-content{
+  font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media rules */
+@media (min-width: 576px){
+  .container{
+    max-width: 540px;
+    }
+  .post-big{
+    width: 100%;
+  }
+  .post-normal{
+    width: 100%;
+  }
+  .catalog-item{
+    width: 100%;
+  }
+}
+@media (min-width: 768px){
+  .container{
+    max-width: 720px;
+    }
+  .main-header__logo{
+    margin-right: 1rem;
+  }
+  .post_big{
+    width: 50%
+  }
+  .post_normal{
+    width: 50%
+  }
+  .catalog-item{
+    width: 100%;
+  }
+}
+@media (min-width: 992px){
+  .container{
+    max-width: 960px;
+  }
+  .nav-link{
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .form__search, .form__search:focus{
+    width: 250px;
+  }
+  .content-area{
+    margin-top: 2rem;
+  }
+  .post_big{
+    width: 50%
+  }
+  .post_normal{
+    width: 25%
+  }
+  .catalog-item{
+    width: 50%;
+  }
+  .secondary-nav{
+    display: block;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    max-width: 1140px;
+    }
+  .main-header__logo{
+    margin-right: 2rem;
+  }
+  .form__search, .form__search:focus{
+    width: 300px;
+  }
+  .catalog-item{
+    width: 25%;
+  }
+}
+
+@media (max-width: 991.98px){
+  .main-header__nav-collapse {
+    visibility: hidden;
+  }
+  .container{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

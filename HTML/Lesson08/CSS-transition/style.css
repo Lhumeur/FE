@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* 
+transition-property - название свойства
+transition-duration - продолжительность перехода
+transition-timing-function - временная функция
+transition-delay - задержка перехода
+transition - краткая запись перехода
+*/
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  color: #696150;
+}
+.wrap{max-width: 660px;}
+#go > kbd{display: block; margin-top: 15px;}
+p{
+  width: 125px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  transition-duration: 3s;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  color: inherit;
+}
+.fa{padding-right: 10px;font-weight: bold;}
+.fa.fa-power-off{color:#ff9e3b;}
+.fa.fa-sync{color:#b7cccc;}
+p:nth-of-type(1){
+  background: #f06e58;
+  transition-timing-function: linear;
+}
+p:nth-of-type(2){
+  background: #fea45d;
+  transition-timing-function: ease;
+}
+p:nth-of-type(3){
+  background: #fdf569;
+  transition-timing-function: ease-in;
+}
+p:nth-of-type(4){
+  background: #b9ea7b;
+  transition-timing-function: ease-out;
+}
+p:nth-of-type(5){
+  background: #b9ecfe;
+  transition-timing-function: ease-in-out;
+}
+p:nth-of-type(6){
+  background: #82ddff;
+  transition-timing-function: cubic-bezier(.6, .1, .15, .8);
+}
+#go:target p {transform: translateX(300px);}

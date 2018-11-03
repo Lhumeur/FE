@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|PT+Serif:400,700,400italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Img/favicon.ico" />
+  <title>Pivo.by &#8212; информационный сайт о пиве в Беларуси и мире</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="container">
+      <a class="main-header__logo" href="#">
+        <img src="Img/logo.png" width="100px" alt="Pivo.by">
+      </a>
+      <div class="main-header__nav-collapse">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">Новости</a></li>
+          <li class="nav-link"><a href="#">Статьи</a></li>
+          <li class="nav-link"><a href="#">Игры</a></li>
+          <li class="nav-link"><a href="#">Рейтинг</a></li>
+          <li class="nav-link nav-link__catalog">
+           <a class="dropdown-toggle" href="#">Каталог</a>
+           <ul class="catalog__nav-links nav-links">
+             <li class="nav-link"><a href="#">Бары и магазины</a></li>
+             <li class="nav-link"><a href="#">Пивоварни</a></li>
+             <li class="nav-link"><a href="#">Сорта</a></li>
+           </ul>
+          </li>
+        </ul>
+        <form class="nav-collapse__form" role="search" id="searchform" method="get" action="#">
+          <label class="screen-reader-text" for="search">Поиск:</label>
+          <input type="text" class="form__search" placeholder="Поиск" name="search" id="search">
+          <button class="form__btn-search" type="submit" id="searchsubmit"></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div class="secondary-nav">
+    <div class="container">
+      <ul class="secondary-nav__nav-links">
+        <li class="nav-link"><a href="#">Ликбез</a></li>
+        <li class="nav-link"><a href="#">Гайды</a></li>
+        <li class="nav-link"><a href="#">Аналитика</a></li>
+        <li class="nav-link"><a href="#">Дегустации</a></li>
+        <li class="nav-link"><a href="#">Домашнее пивоварение</a></li>
+        <li class="nav-link"><a href="#">Пиво и еда</a></li>
+        <li class="nav-link"><a href="#">За и Против</a></li>
+        <li class="nav-link"><a href="#">Места</a></li>
+        <li class="nav-link"><a href="#">Хмель</a></li>
+        <li class="nav-link"><a href="#">Солод</a></li>
+        <li class="nav-link"><a href="#">Дрожжи</a></li>
+      </ul>
+    </div>  
+  </div>
+  <div class="container content-area">
+    <section class="main-posts">
+      <article class="post_big">
+        <a href="#" class="post-link">
+          <div class="post-thumbnail">
+            <img src="Img/beer-stein-1000x667.jpg" alt="Бирштейны" class="post-image">
+          </div>
+          <div class="post-category">Обзоры</div>
+          <header class="post-header">
+            <h1 class="post-title">Американец собрал более 10 тысяч бирштайнов и открыл музей</h1>
+          </header>
+          <div class="post-content">
+            <p>Американский коллекционер собрал более 10 тысяч коллекционных пивных кружек с крышками. В гостях у Джорджа Адамса побывали журналисты сайта Atlas Obscura.</p>
+          </div>
+        </a>
+      </article>
+      <article class="post_normal">
+        <a href="#" class="post-link">
+          <div class="post-thumbnail">
+            <img src="Img/primitive-beer-boxes-400x265.jpg" alt="Пакеты с некарбонизированным пивом Primitive Beer" class="post-image">
+          </div>
+          <div class="post-category">Обзоры</div>
+          <header class="post-header">
+            <h1 class="post-title">Почему пивовары отказываются от карбонизации?</h1>
+          </header>
+          <div class="post-content">
+            <p>Негазированное пиво даёт производителям новые возможности, но клиенты не спешат его покупать. Об этом пишет журналист Джошуа М. Бернстайн на сайте SevenFifty Daily.</p>
+          </div>
+        </a>
+      </article>
+      <article class="post_normal">
+        <a href="#" class="post-link">
+          <div class="post-thumbnail">
+            <img src="Img/fresh-fest-400x265.jpg" alt="Организаторы фестиваля Fresh Fest" class="post-image">
+          </div>
+          <div class="post-category">Новости</div>
+          <header class="post-header">
+            <h1 class="post-title">В США прошёл первый фестиваль афроамериканских крафтовых пивоварен</h1>
+          </header>
+          <div class="post-content">
+            <p>Первый фестиваль крафтовых пивоварен, принадлежащих афроамериканцам, прошёл в Питтсбурге 11 августа. Участниками Fresh Fest 2018 стали более трёх десятков пивоварен.</p>
+          </div>
+        </a>
+      </article>
+    </section>
+
+  </div>
+  
+  
+  
+  
+  <div class="container q">
+  
+  </div>
+
+<!--
+  <div class="nav nav-secondary">
+    <div class="container">
+      <ul class="nav-links">
+        <li class="link-item"><a href="#">Ликбез</a></li>
+        <li class="link-item"><a href="#">Гайды</a></li>
+        <li class="link-item"><a href="#">Аналитика</a></li>
+        <li class="link-item"><a href="#">Дегустации</a></li>
+        <li class="link-item"><a href="#">Домашнее пивоварение</a></li>
+        <li class="link-item"><a href="#">Пиво и еда</a></li>
+        <li class="link-item"><a href="#">За и Против</a></li>
+        <li class="link-item"><a href="#">Места</a></li>
+        <li class="link-item"><a href="#">Хмель</a></li>
+        <li class="link-item"><a href="#">Солод</a></li>
+        <li class="link-item"><a href="#">Дрожжи</a></li>
+      </ul>
+    </div>
+  </div>
+-->
+</body>
+</html>

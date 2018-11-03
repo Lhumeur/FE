@@ -1,0 +1,24 @@
+body{
+  margin: 0;  
+}
+
+div {
+  height: 50vh;
+  border: 50px solid black;
+  margin: 30px; 
+  padding: 30px;
+/*  Цвет фона */
+/*  background-color: transparent;*/
+/*  Фоновое изображение */
+  background-image: url(img/big.jpg);
+/*  Повтор фонового изображения */
+  background-repeat: no-repeat;
+/*  Позиционирование фоновых изображений */
+  background-position: top top;
+/*  Иксация изображения на месте */
+  background-attachment: scroll;
+/*  Заполнение фоном отступов и грациц элементов */
+  background-clip: border-box;
+/*  Положение фонового изображения относительно его родительского блока */
+  background-origin: border-box;
+}

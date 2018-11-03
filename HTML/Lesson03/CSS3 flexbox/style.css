@@ -1,0 +1,27 @@
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /*align-items: baseline;*/
+  align-items: center;
+  align-content: center;
+  border: 1px solid green;
+  background-color: greenyellow;
+  height: 95vh;
+}
+
+.flex-item {
+  width: 50%;
+  background-color: gainsboro;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  color: gray;
+  box-sizing: border-box;
+}
+/* для того чтобы понять зачем:: align-items: baseline; */
+.flex-item:nth-child(2){
+  font-size: 2rem;
+  align-self: flex-start;
+}
