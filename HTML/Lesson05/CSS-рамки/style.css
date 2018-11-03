@@ -1,0 +1,74 @@
+body {
+  height: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+[class^='r'] {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 15px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: grey;
+  line-height: 100px;
+  border: 5px solid;
+}
+
+.r1 {
+  color: #7cd;
+  border-radius: 0 0 20px 20px;
+}
+.r2 {
+  color: #bdc;
+  border-radius: 0 10px 20px;
+}
+.r3 {
+  color: #fd9;
+  border-radius: 10px 20px;
+}
+.r4 {
+  color: #e62;
+  border-radius: 30px/50px;
+}
+.r5 {
+  color: #c11;
+  border-radius: 5px 10px 15px 30px/30px 15px 10px 5px;
+}
+
+.r7 {
+  color: #4E75A1;
+  border-radius: 50%;
+}
+.r8 {
+  color: #afb6b7;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 30px/90px;
+}
+
+div_ {
+  background-color: burlywood;
+  width: 300px;
+  height: 300px;
+/*  Стиль рамки */
+  border-style: double groove;
+/*  Цвет рамки */
+  border-color: green;
+/*  Ширина рамки */
+  border-width: 20px 10px;
+/*  Внешний контур */
+  outline: red solid 30px;
+/*  Скруглим углы ибо делать ваще нефиг стало .... */
+  border-radius: 20% 40%;
+}
