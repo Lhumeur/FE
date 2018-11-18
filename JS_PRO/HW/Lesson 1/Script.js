@@ -1,3 +1,5 @@
+'use strict';
+
 class Sorter {
     constructor() {
         this.arr = [];
@@ -8,32 +10,48 @@ class Sorter {
     }
 
     add(element) {
-        this.arr.push(element);
-        return this.length();
+        return this.arr.push(element);
     }
 
-    sort() {
-        this.arr.sort();
+    sort(fn) {
+        return this.arr.sort(fn);
     }
 
-    map() {
-        return this.arr.map( element => element * 2);
+
+    map(fn) {
+        let results = [];
+
+        for (let i = 0; i < this.arr.length; i++) {
+            results.push(fn(this.arr[i], i, this.arr));
+        }
+        return results;
     }
 
-    filter() {
-        return this.arr.filter( element => element > 0);
+    filter(fn) {
+        let results = [];
+
+        for (let i = 0; i < this.arr.length; i++) {
+            if (fn(this.arr[i], i, this.arr))
+                results.push(this.arr[i]);
+        }
+        return results;
     }
 
     pushArray(array) {
-        for (let element of array) {
-            this.add(element);
-        }
+        return this.arr.push(...array);
     }
 }
 
+// Steps to Test:
+
 /*
+function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a < b) return -1;
+}
+
 let a = new Sorter();
-let b = [{a: 'lorem'}, 55, 'a', 3, {}, -11];
+let c = [{a: 'lorem'}, 55, '12', 0, {}, -11];
 
 a.add(2);
 a.add({b: 'ipsum'});
@@ -42,12 +60,18 @@ a.add(-2);
 a.add(5);
 
 a.length();
-a.pushArray(b);
-a.map();
-a.filter();
-a.sort();
-a.map();
-a.filter();
-a.pushArray(b);
-a.length();
+
+a.pushArray(c);
+
+a;
+
+a.map(function(item) {
+  return item.toString();
+});
+
+b = a.filter(function(item) {
+  return Number(item) === item;
+});
+
+a.sort(compareNumeric);
 */
