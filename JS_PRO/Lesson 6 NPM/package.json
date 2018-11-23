@@ -1,0 +1,17 @@
+{
+  "name": "nmp_test",
+  "version": "1.0.0",
+  "description": "First project with npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "node array/outputTest.js"
+  },
+  "author": "I am",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2"
+  }
+}
