@@ -10,6 +10,6 @@ export const receiveTodoList = (json) => (
 export const getTodoList = () => async (dispatch) => {
   const response = await fetch("https://jsonplaceholder.typicode.com/todos");
   const json = await response.json();
-
+console.log(json);
   return dispatch(receiveTodoList(json))
 };
