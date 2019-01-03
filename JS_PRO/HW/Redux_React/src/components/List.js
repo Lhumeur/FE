@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import withList from './withList'
+import Item from "./Item";
 
-const List = ({items}) => (
-  <ul>
-    {items.map((item, i) =>
-      <li key={i}>{item}</li>
-    )}
-  </ul>
-)
+const List = props => {
+  return (
+    <ul side={props.side} onClick={props.item}>
+      <Item side={props.side}/>
+    </ul>
+  );
+};
 
-export default List
+export default withList(List);
