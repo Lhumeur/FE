@@ -17,11 +17,15 @@ const ViewTodoList = (state = {leftList: [], rightList: []}, action) => {
       let rightSide = state.rightList;
 
       if (action.fromSide === "leftList") {
-        rightSide[rightSide.length] = leftSide[action.index];
+        rightSide.push(leftSide[action.index]);
+        rightSide.sort((l, r) => l.id - r.id);
+
         leftSide = leftSide.filter((item, indx) => indx !== action.index);
       }
       if (action.fromSide === "rightList") {
-        leftSide[leftSide.length] = rightSide[action.index];
+        leftSide.push(rightSide[action.index]);
+        leftSide.sort((l, r) => l.id - r.id);
+
         rightSide = rightSide.filter((item, indx) => indx !== action.index);
       }
       return {
